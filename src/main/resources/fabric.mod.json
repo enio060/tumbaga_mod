@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tumbaga",
+	"version": "${version}",
+	"name": "tumbaga",
+	"description": "The goal of this mod is to introduce a new application for gold and copper by creating an alloy called 'tumbaga.' This innovative alloy aims to allow players to craft tools with performance similar to gold tools but with significantly increased durability. With tumbaga, players can avoid the quick degradation of tools after only a few uses, which is typical of gold tools.",
+	"authors": [
+		"enio060!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tumbaga/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.enio060.tumbagamod.Tumbaga"
+		],
+		"client": [
+			"net.enio060.tumbagamod.TumbagaClient"
+		],
+		"fabric-datagen": [
+			"net.enio060.tumbagamod.TumbagaDataGenerator"
+		]
+	},
+	"mixins": [
+		"tumbaga.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
